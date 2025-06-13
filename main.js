@@ -28,4 +28,4 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
         clearInterval(loop);
     }
 },10);
-document.addEventListener("keydown, jump");
+document.addEventListener("keydown", "jump");
