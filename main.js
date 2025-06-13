@@ -22,10 +22,11 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
         mario.style.left = `${marioPosition}px`;
 
         mario.src = "./img/game-over.png";
-        mario.style.width= "75px";
-        mario.style.marginLeft= "50px";
+        mario.style.width = "75px";
+        mario.style.marginLeft = "50px";
 
         clearInterval(loop);
     }
 },10);
-document.addEventListener("keydown", "jump");
+
+document.addEventListener("keydown", jump);
